@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+</head>
+<body>
+
+<h1>Formulario de Inscripcion 2024</h1>
+
+<form id="myForm">
+  <label for="control1">Nombres:</label>
+  <input type="text" id="control1"><br><br>
+
+  <label for="control2">Apellidos:</label>
+  <input type="text" id="control2"><br><br>
+
+  <label for="control3">Nacionalidad:</label>
+  <input type="text" id="control3"><br><br>
+
+  <label for="control4">Universidad:</label>
+  <input type="text" id="control4"><br><br>
+
+  <label for="control5">Carrera que estudia:</label>
+  <input type="text" id="control5"><br><br>
+
+  <button type="button" onclick="guardarDatos()">Guardar</button>
+</form>
+
+<script>
+  function guardarDatos() {
+    const control1Value = document.getElementById('control1').value;
+    const control2Value = document.getElementById('control2').value;
+    const control3Value = document.getElementById('control3').value;
+    const control4Value = document.getElementById('control4').value;
+    const control5Value = document.getElementById('control5').value;
+
+    console.log('Nombres:', control1Value);
+    console.log('Apellidos:', control2Value);
+    console.log('Nacionalidad:', control3Value);
+    console.log('Universidad:', control4Value);
+    console.log('Carrera que estudia:', control5Value);
+  }
+</script>
+
+</body>
+</html>
